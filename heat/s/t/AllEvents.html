@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xml:lang="en-GB" lang="en-GB" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head dir="ltr" lang="en-GB">
+	<title>My Family Tree - All Events</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps AIO64-6.0.3--1 http://gramps-project.org/" />
+	<meta name="author" content="Laura Kathryn "Lauryn" Zamora Ong Loubert" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/Basic-Ash.css" media="screen" rel="alternate stylesheet" title="Basic-Ash" type="text/css" />
+	<link href="../../../css/Basic-Blue.css" media="screen" rel="alternate stylesheet" title="Basic-Blue" type="text/css" />
+	<link href="../../../css/Basic-Cypress.css" media="screen" rel="alternate stylesheet" title="Basic-Cypress" type="text/css" />
+	<link href="../../../css/Basic-Lilac.css" media="screen" rel="alternate stylesheet" title="Basic-Lilac" type="text/css" />
+	<link href="../../../css/Basic-Peach.css" media="screen" rel="alternate stylesheet" title="Basic-Peach" type="text/css" />
+	<link href="../../../css/Basic-Spruce.css" media="screen" rel="alternate stylesheet" title="Basic-Spruce" type="text/css" />
+	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
+	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
+	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+	<link href="../../../css/narrative-maps.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://openlayers.org/en/v6.15.1/build/ol.js" type="text/javascript"></script>
+	<link href="https://openlayers.org/en/v6.15.1/css/ol.css" rel="stylesheet" type="text/css" />
+	<script href="https://openlayers.org/en/v6.15.1/css/ol.css" rel="stylesheet" type="text/javascript">
+	</script>
+</head>
+<body dir="ltr">
+	<div id="outerwrapper">
+		<div class="ltr" id="header">
+			<button href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</button>
+			<h1 class="nav" id="SiteTitle">My Family Tree</h1>
+		</div>
+		<div class="wrappernav ltr" id="nav" role="navigation">
+			<div class="container">
+				<ul class="nav" id="dropmenu">
+					<li><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
+					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
+					<li><a href="../../../heatmaps.html" title="Heatmaps">Heatmaps</a></li>
+					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
+				</ul>
+			</div>
+		</div>
+		<button id="gototop" onclick="GoToTop()" title="Go to top">
+			<svg class="triangle" viewBox="0 0 100 100">
+				<polygon points="0,100 100,100, 50,10">
+				</polygon>
+			</svg>
+		</button>
+	
+<script>
+//Get the button
+var gototop = document.getElementById("gototop");
+
+// When the user scrolls down 200px from the top of the document,
+// show the button
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function GoToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+		<div class="content" id="events">
+			<p id="description">
+			This section contains the map for all people with the event: All Events (Entire Database)
+			</p>
+		</div>
+		<div id="map_canvas">
+		</div>
+		<div class="ol-popup" id="popup"><a class="ol-popup-closer" href="#" id="popup-closer"></a><div class="ol-popup-title" id="popup-title"></div><div class="ol-popup-content" id="popup-content"></div></div>
+		<div class="ol-popup" id="tooltip"><div id="tooltip-content"></div></div>
+	<script deter="deter" style="width =100%; height =100%;" type="text/javascript">
+	
+  var marker_png = '../../../images/marker.png';
+
+	
+  window.addEventListener("load", function() {
+    var map;
+    var heat = 'heatmap';
+    var tracelife = [[-85.323200, 51.253800, ' <a href="../../../plc/f/d/ff39b9d6d5214fe9964d51403df.html">Canada</a>', "<p><a href='../../../ppl/3/b/ff3cbbf4c66234bc19462353b3.html' title='I0041' target='_self'>Zamora, Ma. Corazon de Jesus</a>: Death (2026-04-20)" + "<br><a href='../../../ppl/2/a/10343bfe17be1693cfbbf02ebda2.html' title='I0242' target='_self'>Sevilla, Arya Soriano</a>: Birth (2025-09-08)" + "<br><a href='../../../ppl/9/7/ff39baa3b27447457c47bfab279.html' title='I0005' target='_self'>Loubert, Frederick Grant</a>: Birth (1975-10-13)" + "<br><a href='../../../ppl/d/1/ff39df22bed64e1790b21035b1d.html' title='I0013' target='_self'>Evans, Dianne Shirley</a>: Birth (1941-03-12)" + "<br><a href='../../../ppl/8/f/ff39e13c0505974b55793ade5f8.html' title='I0014' target='_self'>Loubert, Joseph Robert</a>: Birth (1939-05-24)" + "<br><a href='../../../ppl/9/9/ff39e282f32375d78118b3ba599.html' title='I0015' target='_self'>Loubert, Glenn Robert</a>: Birth (1964-05-26)" + "<br><a href='../../../ppl/3/2/ff39e313117376c345cd30ba723.html' title='I0016' target='_self'>Loubert, Michelle Ann</a>: Birth (1962-06-24)" + "<br><a href='../../../ppl/7/7/ff3aa793b6569796d4f3280a077.html' title='I0033' target='_self'>Servage, David Lloyd</a>: Birth (0-04-24)" + "<br><a href='../../../ppl/f/f/ff3aad9b0467c840851eaf829ff.html' title='I0034' target='_self'>Servage, Shirley Elizabeth</a>: Birth (1983-10-16)" + "<br><a href='../../../ppl/a/8/ff3aaee610e4cef4bc786378b8a.html' title='I0035' target='_self'>Servage, June Elinor</a>: Birth (1986-07-24)" + "<br><a href='../../../ppl/e/d/ff3abb26b095c541e423cead1de.html' title='I0036' target='_self'>Loubert, Sandra May</a>: Birth (0-09-19)" + "<br><a href='../../../ppl/0/d/ff3cbbf4e1d2573079e6399b2d0.html' title='I0060' target='_self'>de Jesus, Victoria Liwayway</a>: Residence" + "<br><a href='../../../ppl/b/b/ff3cbbf4f5c3f32b99e1f3d4cbb.html' title='I0082' target='_self'>de Jesus, Luningning</a>: Residence" + "<br><a href='../../../ppl/8/a/ff3cbbf548b7856988cc40058a8.html' title='I0179' target='_self'>Zamora, Julito</a>: Residence" + "<br><a href='../../../ppl/1/7/ff3cbbf558437adeca71edb2271.html' title='I0192' target='_self'>Camara, Jose Salvador Gaela</a>: Residence" + "<br><a href='../../../ppl/0/b/ff3cbbf4c3431d2a46076e9ddb0.html' title='I0039' target='_self'>de Jesus, Julita</a>: Death (2009-04-02)" + "<br><a href='../../../ppl/d/c/ff3d17c4f311c172c363b97d0cd.html' title='I0210' target='_self'>Sevilla, Riley Angelo Soriano</a>: Birth (2020-10-25)" + "<br><a href='../../../ppl/2/c/ff3cbbf4d4cb1e4aa9b577edc2.html' title='I0048' target='_self'>Petraki, Patrick Marie Zamora</a>: Marriage (2006-07-14)" + "<br><a href='../../../ppl/8/f/ff3d30e7da05bbdd41aac8f02f8.html' title='I0213' target='_self'>Mercer, Jennifer</a>: Marriage (2006-07-14)" + "<br><a href='../../../ppl/2/c/ff3cbbf4d4cb1e4aa9b577edc2.html' title='I0048' target='_self'>Petraki, Patrick Marie Zamora</a>: Marriage (2022-07-23)" + "<br><a href='../../../ppl/4/6/ff3d32510d157eab4b93c9d7664.html' title='I0214' target='_self'>Fraser, Jaclyn</a>: Marriage (2022-07-23)" + "<br><a href='../../../ppl/b/0/ff3d34d22db2aa0eb17cd83db0b.html' title='I0215' target='_self'>Moore, Patrick Mitchell</a>: Birth (1987-02-01)" + "<br><a href='../../../ppl/8/f/ff3d30e7da05bbdd41aac8f02f8.html' title='I0213' target='_self'>Mercer, Jennifer</a>: Birth (1982-02-22)"],[121.774000, 12.879700, ' <a href="../../../plc/d/6/ff39ba500be4ba7821329f0fe6d.html">Philippines</a>', "<p><a href='../../../ppl/0/d/ff3cbbf4e1d2573079e6399b2d0.html' title='I0060' target='_self'>de Jesus, Victoria Liwayway</a>: Death (2004-12-26)" + "<br><a href='../../../ppl/5/b/ff3cbbf4e453527c162426b5.html' title='I0062' target='_self'>Ahorro, Leonora</a>: Death (2019-02-17)" + "<br><a href='../../../ppl/8/b/ff3cbbf4e3b768d5a30b2653fb8.html' title='I0061' target='_self'>Ahorro, Mariano</a>: Death (1998-10-07)" + "<br><a href='../../../ppl/7/2/ff3cbbf52ac6315c4b9c05f9827.html' title='I0145' target='_self'>de Jesus, Ronaldo</a>: Death (2007-02-05)" + "<br><a href='../../../ppl/4/3/ff3cbbf535f78f4d8ea6fd93d34.html' title='I0156' target='_self'>de Jesus, Roberto</a>: Death (2023-05-20)" + "<br><a href='../../../ppl/3/4/ff3cbbf52983aeccf341cb4f43.html' title='I0144' target='_self'>Ilasco, Tecla</a>: Death (2010-08-27)" + "<br><a href='../../../ppl/a/8/ff3cbbf522a6b5ffe64ba22098a.html' title='I0138' target='_self'>Zamora, Primitivo</a>: Death (1994-05-01)" + "<br><a href='../../../ppl/a/2/1031d3000dbc346933bad214062a.html' title='I0238' target='_self'>David, Jose Miguel</a>: Birth (2001-10-17)" + "<br><a href='../../../ppl/a/2/1031d3000dbc346933bad214062a.html' title='I0238' target='_self'>David, Jose Miguel</a>: Death (2001-10-17)" + "<br><a href='../../../ppl/e/9/1031d388bd24206ea83faa614d9e.html' title='I0239' target='_self'>Zamora, Gary A</a>: Birth (1971-10-27)" + "<br><a href='../../../ppl/e/9/1031d388bd24206ea83faa614d9e.html' title='I0239' target='_self'>Zamora, Gary A</a>: Death (2019-09-11)" + "<br><a href='../../../ppl/2/e/10343ab03f61355a7c1df84e35e2.html' title='I0240' target='_self'>Zamora, Ivhan Piasan</a>: Birth (2007-03-08)" + "<br><a href='../../../ppl/2/3/10343ac196387145194cfa882a32.html' title='I0241' target='_self'>Zamora, Ehvo Piasan</a>: Birth (2010-09-18)" + "<br><a href='../../../ppl/1/1/ff3cbbf543b6b43a77eecb28f11.html' title='I0172' target='_self'>Juan, Andres, Jr.</a>: Birth (1960-06-20)" + "<br><a href='../../../ppl/3/b/ff3cbbf4c66234bc19462353b3.html' title='I0041' target='_self'>Zamora, Ma. Corazon de Jesus</a>: Degree" + "<br><a href='../../../ppl/f/8/ff3a81db7141fa54ad4383e88f.html' title='I0028' target='_self'>Mirabueno, Edwin Pena</a>: Birth (1945-03-16)" + "<br><a href='../../../ppl/b/5/ff3a87e8bba20a6b0d0dfe1325b.html' title='I0029' target='_self'>Villanoy, Moses</a>: Birth (1959-01-24)" + "<br><a href='../../../ppl/b/5/ff3a87e8bba20a6b0d0dfe1325b.html' title='I0029' target='_self'>Villanoy, Moses</a>: Marriage (2002-06-22)" + "<br><a href='../../../ppl/1/c/ff3cbbf4cfc274f58a9a4f2d2c1.html' title='I0045' target='_self'>Zamora, Rosario de Jesus</a>: Marriage (2002-06-22)" + "<br><a href='../../../ppl/a/f/ff3a9768d40a3aef5bb7a389fa.html' title='I0030' target='_self'>Mirabueno, Christian Martirez</a>: Birth (1978-11-05)" + "<br><a href='../../../ppl/1/5/ff3a9812b1c2760ee220a4f5951.html' title='I0031' target='_self'>Mirabueno, Xavier Martirez</a>: Birth (1979-09-24)" + "<br><a href='../../../ppl/d/c/ff3cbbf4d9174c26815459fe4cd.html' title='I0053' target='_self'>Zamora, Analyn Pangan</a>: Birth (1977-09-28)" + "<br><a href='../../../ppl/5/b/ff3cbbf4da536a5884f029e7fb5.html' title='I0054' target='_self'>Zamora, Anna Rose Pangan</a>: Birth (1979-06-03)" + "<br><a href='../../../ppl/c/3/ff3cbbf4dc3752cbfb621feb73c.html' title='I0055' target='_self'>Zamora, Anna Louise Pangan</a>: Birth (1981-01-21)" + "<br><a href='../../../ppl/3/5/ff3cbbf4dd75480ccac16701b53.html' title='I0056' target='_self'>Zamora, Anthony Pangan</a>: Birth (1982-07-03)" + "<br><a href='../../../ppl/b/b/ff3cbbf4df517243eb4fff644bb.html' title='I0058' target='_self'>Perez, Mhark Whillard Son Zamora</a>: Birth (1995-12-11)" + "<br><a href='../../../ppl/2/f/ff3cbbf4e093e331d85468126f2.html' title='I0059' target='_self'>Perez, Michael Von Angelo Zamora</a>: Birth (1997-07-10)" + "<br><a href='../../../ppl/e/1/ff3cbbf52026e94700a9c5971e.html' title='I0135' target='_self'>Zamora, Maximino, Sr.</a>: Death (1958-08-30)" + "<br><a href='../../../ppl/5/b/ff3cbbf54457d8824295c138fb5.html' title='I0173' target='_self'>Juan, Cynthia</a>: Marriage (1985-05-11)" + "<br><a href='../../../ppl/6/7/ff3d11e17ca18b8999a1bceb676.html' title='I0204' target='_self'>Sevilla, Willie</a>: Marriage (1985-05-11)" + "<br><a href='../../../ppl/c/0/ff3d1364c5051fd67a38b5eed0c.html' title='I0205' target='_self'>Sevilla, Ryan</a>: Birth (1986-09-18)" + "<br><a href='../../../ppl/e/7/ff3d171000e263c91efa7e9357e.html' title='I0209' target='_self'>Soriano, Arlyn</a>: Marriage (2013-05)" + "<br><a href='../../../ppl/c/0/ff3d1364c5051fd67a38b5eed0c.html' title='I0205' target='_self'>Sevilla, Ryan</a>: Marriage (2013-05)" + "<br><a href='../../../ppl/2/8/ff3cbbf543151b3d57bbaba8e82.html' title='I0171' target='_self'>Juan, Alexander</a>: Birth (1958-10-15)" + "<br><a href='../../../ppl/5/d/ff3cbbf53ff454ea1e6b782dbd5.html' title='I0167' target='_self'>Tirol, Maribelle</a>: Birth (0-11-22)" + "<br><a href='../../../ppl/d/c/ff3d2d5f3907c935517f690c6cd.html' title='I0212' target='_self'>Perez, Michaela Normalyn Faye Zamora</a>: Birth (2001-08-15)" + "<br><a href='../../../ppl/1/e/ff3d37a4f79f802c19abe0a2e1.html' title='I0216' target='_self'>Mariano, Armando</a>: Birth (1973-02-09)" + "<br><a href='../../../ppl/2/0/ff3d3bbdcb46b4cfb0913c18202.html' title='I0218' target='_self'>Lasquite, Khaitlynne</a>: Birth (2019-09-01)" + "<br><a href='../../../ppl/c/e/ff3d85bbc12677919f875490aec.html' title='I0223' target='_self'>Piasan, Evelyn</a>: Birth (1984-08-15)" + "<br><a href='../../../ppl/5/4/ff3cbbf4deb5ed66d2f806af745.html' title='I0057' target='_self'>Perez, Michael R</a>: Marriage Contract (2003-04-02)" + "<br><a href='../../../ppl/d/c/ff3cbbf4d9174c26815459fe4cd.html' title='I0053' target='_self'>Zamora, Analyn Pangan</a>: Marriage Contract (2003-04-02)" + "<br><a href='../../../ppl/5/4/ff3cbbf4deb5ed66d2f806af745.html' title='I0057' target='_self'>Perez, Michael R</a>: Marriage (2017-03-22)" + "<br><a href='../../../ppl/d/c/ff3cbbf4d9174c26815459fe4cd.html' title='I0053' target='_self'>Zamora, Analyn Pangan</a>: Marriage (2017-03-22)" + "<br><a href='../../../ppl/0/b/ff3f0a877591b34c31f2cb4dab0.html' title='I0226' target='_self'>Perez, Matthew Luis Zamora</a>: Birth (2018-01-19)" + "<br><a href='../../../ppl/c/6/ff3f0988d7041b7219a40a9fe6c.html' title='I0225' target='_self'>Perez, Mhicky Lawrence Zamora</a>: Birth (2007-05-19)" + "<br><a href='../../../ppl/c/9/ff3f07d38c4247e3aa10375a9c.html' title='I0224' target='_self'>Perez, Mhicko Jefferson Zamora</a>: Birth (2006-04-17)" + "<br><a href='../../../ppl/5/4/ff3cbbf4deb5ed66d2f806af745.html' title='I0057' target='_self'>Perez, Michael R</a>: Birth (1972-08-31)" + "<br><a href='../../../ppl/a/d/ff3f190d195528f03c25c5879da.html' title='I0227' target='_self'>Perez, Nyx Fryl Syvyn Peralta</a>: Birth (2022-09-06)" + "<br><a href='../../../ppl/b/9/ff3f1a86e794807b50bf602829b.html' title='I0228' target='_self'>Perez, Ryx Lhyll Zyvy Peralta</a>: Birth (2025-02-21)" + "<br><a href='../../../ppl/6/9/ff3f1b53b252fcebb4de25aa696.html' title='I0229' target='_self'>Peralta, Joylyn</a>: Birth (1996-03-01)" + "<br><a href='../../../ppl/3/d/ff3f1fe258f172c3bcbc6679fd3.html' title='I0230' target='_self'>Perez, Michelle Nhadine M</a>: Birth (2015-05-29)" + "<br><a href='../../../ppl/d/4/ff3f20b82b413cff4c1b0f7c4d.html' title='I0231' target='_self'>Cruz, Errol Perez</a>: Birth (2001-03-11)"],[120.960833, 14.736944, ' <a href="../../../plc/3/2/ff3cbbf4bfc45e03bed93227423.html">Meycauayan, Bulacan, Philippines</a>', "<p><a href='../../../ppl/8/7/ff3cbbf54774eaff3be94574878.html' title='I0178' target='_self'>Dazo, Trinidad</a>: Death (before 2026)" + "<br><a href='../../../ppl/c/d/ff3cbbf4be8379ccb29177ee4dc.html' title='I0001' target='_self'>Zamora, Mateo Moraga</a>: Birth (1920-09-21)" + "<br><a href='../../../ppl/c/d/ff3cbbf4be8379ccb29177ee4dc.html' title='I0001' target='_self'>Zamora, Mateo Moraga</a>: Death (1991-04-09)" + "<br><a href='../../../ppl/a/e/ff3cbbf4c521c02a4cffad920ea.html' title='I0040' target='_self'>Zamora, Mateo de Jesus, Jr.</a>: Birth (1947-06-27)" + "<br><a href='../../../ppl/3/b/ff3cbbf4c66234bc19462353b3.html' title='I0041' target='_self'>Zamora, Ma. Corazon de Jesus</a>: Birth (1948-03-15)" + "<br><a href='../../../ppl/d/b/ff3cbbf4c986f2b74fcf29ac4bd.html' title='I0042' target='_self'>Zamora, Julieta de Jesus</a>: Birth (1949-06-24)" + "<br><a href='../../../ppl/d/0/ff3cbbf4cd4739435a5d241690d.html' title='I0043' target='_self'>Zamora, Ma. Laura de Jesus</a>: Birth (1951-04-28)" + "<br><a href='../../../ppl/6/e/ff3cbbf4cf2408f07539ba938e6.html' title='I0044' target='_self'>Zamora, Anita de Jesus</a>: Birth (1956-05-24)" + "<br><a href='../../../ppl/1/c/ff3cbbf4cfc274f58a9a4f2d2c1.html' title='I0045' target='_self'>Zamora, Rosario de Jesus</a>: Birth (1958-10-18)" + "<br><a href='../../../ppl/4/5/ff3cbbf519f687dd52dae349254.html' title='I0132' target='_self'>de Jesus, Graciano</a>: Death (1995-03-18)" + "<br><a href='../../../ppl/0/b/ff3cbbf51bd68d6b84128f72fb0.html' title='I0133' target='_self'>de Jesus, Gorgonio</a>: Death (1990-04-19)" + "<br><a href='../../../ppl/c/e/ff3cbbf51da5e49e45f3fb167ec.html' title='I0134' target='_self'>Zamora, Apolinario</a>: Birth (1915-02-18)" + "<br><a href='../../../ppl/c/e/ff3cbbf51da5e49e45f3fb167ec.html' title='I0134' target='_self'>Zamora, Apolinario</a>: Death (1956-11-26)" + "<br><a href='../../../ppl/c/4/ff3cbbf52166a0a31742a7fb34c.html' title='I0137' target='_self'>Fidel, Petnila</a>: Death (1986-12-18)" + "<br><a href='../../../ppl/9/3/ff3cbbf52342ea5570f5a199339.html' title='I0139' target='_self'>Zamora, Donato</a>: Death (1994-04-01)" + "<br><a href='../../../ppl/a/3/ff3cbbf52661723db08f28a373a.html' title='I0142' target='_self'>de Jesus, Reynaldo</a>: Birth (1966-09-08)" + "<br><a href='../../../ppl/a/3/ff3cbbf52661723db08f28a373a.html' title='I0142' target='_self'>de Jesus, Reynaldo</a>: Death (1997-06-05)" + "<br><a href='../../../ppl/7/2/ff3cbbf52ac6315c4b9c05f9827.html' title='I0145' target='_self'>de Jesus, Ronaldo</a>: Birth (1964-05-26)" + "<br><a href='../../../ppl/6/5/ff3cbbf52c074bb2ec4620dda56.html' title='I0146' target='_self'>de Jesus, Rizalina</a>: Birth (1962-06-19)" + "<br><a href='../../../ppl/8/7/ff3cbbf54774eaff3be94574878.html' title='I0178' target='_self'>Dazo, Trinidad</a>: Birth (1919-06-15)" + "<br><a href='../../../ppl/8/a/ff3cbbf548b7856988cc40058a8.html' title='I0179' target='_self'>Zamora, Julito</a>: Birth (1937-10-18)" + "<br><a href='../../../ppl/9/e/ff3cbbf54b23ae21e8800fb6ae9.html' title='I0180' target='_self'>Zamora, Ceferino</a>: Birth (1939-02-03)"],[121.003000, 15.659100, ' <a href="../../../plc/e/b/ff3cbbf4c3e1a083f5e7d195be.html">Nueva Ecija, Philippines</a>', "<p><a href='../../../ppl/0/b/ff3cbbf4c3431d2a46076e9ddb0.html' title='I0039' target='_self'>de Jesus, Julita</a>: Birth (1925-06-19)"],[120.984200, 14.599500, ' <a href="../../../plc/c/9/ff3cbbf4cc05a47619817953f9c.html">Manila, Philippines</a>', "<p><a href='../../../ppl/d/b/ff3cbbf4c986f2b74fcf29ac4bd.html' title='I0042' target='_self'>Zamora, Julieta de Jesus</a>: Death (1999-02-16)" + "<br><a href='../../../ppl/2/c/ff3cbbf4d4cb1e4aa9b577edc2.html' title='I0048' target='_self'>Petraki, Patrick Marie Zamora</a>: Birth (1984-08-23)" + "<br><a href='../../../ppl/4/7/ff3cbbf4d6957010e64dfc88b74.html' title='I0050' target='_self'>Zamora, Julie Anne de Jesus</a>: Birth (1983-11-21)" + "<br><a href='../../../ppl/0/d/ff3cbbf4d7d7f474380b09b85d0.html' title='I0051' target='_self'>Zamora, Sarah Jane de Jesus</a>: Birth (1985-01-19)" + "<br><a href='../../../ppl/4/8/ff3cbbf4f841360f4e69b6fdb84.html' title='I0084' target='_self'>Ong, Laura Kathryn Zamora</a>: Birth (1976-06-07)" + "<br><a href='../../../ppl/7/4/ff3cbbf550c443ae91501628a47.html' title='I0187' target='_self'>Zamora, Judith</a>: Birth (1970-03-01)" + "<br><a href='../../../ppl/7/a/ff3cbbf552a3f7bc24db5207aa7.html' title='I0188' target='_self'>Zamora, Jocelyn</a>: Birth (1966-03-25)" + "<br><a href='../../../ppl/8/2/ff3cbbf553e6c1d6d4df4026f28.html' title='I0189' target='_self'>Zamora, Jane</a>: Birth (1969-01-25)" + "<br><a href='../../../ppl/7/e/ff3cbbf555221fd3492b030ffe7.html' title='I0190' target='_self'>Zamora, Jeanette</a>: Birth (1968-02-09)" + "<br><a href='../../../ppl/f/5/ff3cbbf55665f993c57bf36915f.html' title='I0191' target='_self'>Zamora, Jinky</a>: Birth (1973-01-09)" + "<br><a href='../../../ppl/a/e/ff3cbbf4c521c02a4cffad920ea.html' title='I0040' target='_self'>Zamora, Mateo de Jesus, Jr.</a>: Death (2011-12-09)" + "<br><a href='../../../ppl/d/0/ff3cbbf4cd4739435a5d241690d.html' title='I0043' target='_self'>Zamora, Ma. Laura de Jesus</a>: Marriage (2003-06-07)" + "<br><a href='../../../ppl/f/8/ff3a81db7141fa54ad4383e88f.html' title='I0028' target='_self'>Mirabueno, Edwin Pena</a>: Marriage (2003-06-07)" + "<br><a href='../../../ppl/e/7/ff3d171000e263c91efa7e9357e.html' title='I0209' target='_self'>Soriano, Arlyn</a>: Birth (1983-02-17)" + "<br><a href='../../../ppl/3/8/ff3cbbf4d107f62853f1232fb83.html' title='I0046' target='_self'>Petraki, Elie Farid</a>: Marriage (1980-11-22)" + "<br><a href='../../../ppl/3/b/ff3cbbf4c66234bc19462353b3.html' title='I0041' target='_self'>Zamora, Ma. Corazon de Jesus</a>: Marriage (1980-11-22)"],[29.924526, 31.205753, ' <a href="../../../plc/8/4/ff3cbbf4d1a78039bf8e5e7c48.html">Alexandria, Egypt</a>', "<p><a href='../../../ppl/3/8/ff3cbbf4d107f62853f1232fb83.html' title='I0046' target='_self'>Petraki, Elie Farid</a>: Birth (1942-09-30)"],[20.457300, 44.787200, ' <a href="../../../plc/c/6/ff3cbbf4d384da8de57d2b74b6c.html">Belgrade, Yugoslavia</a>', "<p><a href='../../../ppl/c/9/ff3cbbf4d2e6bc750e96f82459c.html' title='I0047' target='_self'>Petraki, Paul Mathieu Josef Zamora</a>: Birth (1982-08-11)"],[121.764500, 17.426400, ' <a href="../../../plc/5/0/ff3cbbf550249a62d0def97b505.html">Cabagan, Isabela, Philippines</a>', "<p><a href='../../../ppl/5/3/ff3cbbf54f8e24b76506a0d535.html' title='I0186' target='_self'>Mannag, Lydia</a>: Birth (1939-08-03)"],[-75.695000, 45.424720, ' <a href="../../../plc/b/7/103528f3ec852d5a1fb0d3cafc7b.html">Ottawa, Canada</a>', "<p><a href='../../../ppl/5/8/1035257edb5228a9f7e6030c5985.html' title='I0248' target='_self'>Gibeault, Jacob</a>: Birth (2013)" + "<br><a href='../../../ppl/f/a/ff39b8ee5dd362c1dd14e31a3af.html' title='I0004' target='_self'>Loubert, Mateo Frederick Zamora</a>: Birth (2005-02-18)" + "<br><a href='../../../ppl/4/8/ff3cbbf4f841360f4e69b6fdb84.html' title='I0084' target='_self'>Ong, Laura Kathryn Zamora</a>: Marriage (2002-10-12)" + "<br><a href='../../../ppl/9/7/ff39baa3b27447457c47bfab279.html' title='I0005' target='_self'>Loubert, Frederick Grant</a>: Marriage (2002-10-12)" + "<br><a href='../../../ppl/b/9/ff3abd83c7c74fa150c52a80c9b.html' title='I0037' target='_self'>Loubert, Emma Ryan</a>: Birth (2002-10-13)" + "<br><a href='../../../ppl/5/f/ff3abe5e8f44b51652db7344cf5.html' title='I0038' target='_self'>Loubert, Jackson Evan</a>: Birth (2004-09-11)"],];
+    var iconStyle = new ol.style.Style({
+      image: new ol.style.Icon(({
+        anchor: [0.2, 48],
+        anchorXUnits: 'fraction',
+        anchorYUnits: 'pixels',
+        opacity: 1.0,
+        src: marker_png
+      }))
+    });
+    var markerSource = new ol.source.Vector({
+    });
+    var centerCoord = new ol.proj.transform([72.57683414690268, 22.535252476106194], 'EPSG:4326', 'EPSG:3857');
+    var zoom = 4;
+    var radius = 8;
+    var blur = 15;
+    for (var i = 0; i < tracelife.length; i++) {
+      var loc = tracelife[i];
+      var iconFeature = new ol.Feature({
+       geometry: new ol.geom.Point(ol.proj.transform([loc[0], loc[1]],
+                                                     'EPSG:4326', 'EPSG:3857')),
+       name: loc[2],
+       data: loc[3],
+      });
+      iconFeature.setStyle(iconStyle);
+      markerSource.addFeature(iconFeature);
+    }
+    markerLayer = new ol.layer.Vector({
+      source: markerSource,
+      style: iconStyle
+    });
+    tooltip = new ol.layer.Vector({
+      source: markerSource,
+      style: iconStyle
+    });
+    heatmap = new ol.layer.Heatmap({
+      source: markerSource,
+      radius: radius,
+      blur: blur,
+      style: iconStyle
+    });
+    if (heat == "heatmap") {
+      map = new ol.Map({
+                   target: 'map_canvas',
+                   layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
+                            heatmap],
+                   view: new ol.View({ center: centerCoord, zoom: zoom })
+                   });
+    } else {
+      map = new ol.Map({
+                   target: 'map_canvas',
+                   layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
+                            markerLayer, tooltip],
+                   view: new ol.View({ center: centerCoord, zoom: zoom })
+                   });
+    };
+
+	
+    var element = document.getElementById('popup');
+    var content = document.getElementById('popup-content');
+    var ptitle = document.getElementById('popup-title');
+    var closer = document.getElementById('popup-closer');
+    var tip = document.getElementById('tooltip');
+    var tipcontent = document.getElementById('tooltip-content');
+    var tltip1 = undefined;
+    var tltip2 = undefined;
+    var tooltip = new ol.Overlay({
+      element: tip,
+      positioning: 'bottom-center',
+      offset: [10, 0],
+    });
+    map.addOverlay(tooltip);
+    var popup = new ol.Overlay({
+      element: element,
+      positioning: 'bottom-center',
+      autoPan: true,
+      autoPanAnimation: { duration: 500 },
+      stopEvent: true
+    });
+    map.addOverlay(popup);
+    /**
+     * Add a click handler to hide the popup.
+     * @return {boolean} Don't follow the href.
+     */
+    closer.onclick = function() {
+      popup.setPosition(undefined);
+      closer.blur();
+      tltip1 = undefined;
+      tltip2 = undefined;
+      return false;
+    };
+    map.on('pointermove', function(evt) {
+      evt.preventDefault()
+      if (tltip2 !== undefined) {
+        return;
+      }
+      var feature = this.forEachFeatureAtPixel(evt.pixel,
+                                               function(feature, layer) {
+        tltip1 = feature;
+        return feature;
+      });
+      map.getTargetElement().style.cursor = feature ? 'pointer' : '';
+      if (evt.dragging) {
+        tooltip.setPosition(undefined);
+        return;
+      }
+      if (feature) {
+        var coordinate = evt.coordinate;
+        tipcontent.innerHTML = feature.get('name');
+        tooltip.setPosition(coordinate);
+      } else {
+        tooltip.setPosition(undefined);
+      }
+    });
+    map.on('singleclick', function(evt) {
+      evt.preventDefault();
+      if (tltip1 !== undefined) {
+        tooltip.setPosition(undefined);
+      }
+      var feature = map.forEachFeatureAtPixel(evt.pixel,
+                                              function(feature, layer) {
+        tltip2 = feature;
+        return feature;
+      });
+      if (feature) {
+      var coordinate = evt.coordinate;
+      var title = '<h2>' + feature.get('name') + '</h2>';
+      ptitle.innerHTML = title;
+      content.innerHTML = feature.get('data');
+      popup.setPosition(coordinate);
+      }
+      });
+  });
+
+	</script>
+		<div class="fullclear"></div>
+		<div id="footer">
+			<p id="createdate">
+			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1 on 2026-06-22
+			</p>
+			<p id="copyright">
+			&copy; 2026 Laura Kathryn "Lauryn" Zamora Ong Loubert
+			</p>
+		</div>
+	</div>
+</body>
+</html>
