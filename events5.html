@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xml:lang="en-GB" lang="en-GB" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 <head dir="ltr" lang="en-GB">
-	<title>My Family Tree - Heatmaps</title>
+	<title>My Family Tree - Events</title>
 	<meta charset="UTF-8" />
 	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
 	<meta name ="apple-mobile-web-app-capable" content="yes" />
@@ -35,9 +35,9 @@
 					<li><a href="individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="index.html" title="Surnames">Surnames</a></li>
 					<li><a href="families.html" title="Families">Families</a></li>
-					<li><a href="events.html" title="Events">Events</a></li>
+					<li class = "CurrentSection"><a href="events.html" title="Events">Events</a></li>
 					<li><a href="places.html" title="Places">Places</a></li>
-					<li class = "CurrentSection"><a href="heatmaps.html" title="Heatmaps">Heatmaps</a></li>
+					<li><a href="heatmaps.html" title="Heatmaps">Heatmaps</a></li>
 					<li><a href="updates.html" title="Updates">Updates</a></li>
 					<li><a href="statistics.html" title="Statistics">Statistics</a></li>
 				</ul>
@@ -74,32 +74,74 @@ function GoToTop() {
 }
 </script>
 
-		<div class="content" id="Events">
+		<div class="content" id="EventList">
 			<p id="description">
-			The next section contains an index of all the events for an Heatmap map.
+			This page contains an index of all the events in the database, sorted by their type and date (if one is present). Clicking on an event&#8217;s Gramps ID will open a page for that event.
 			</p>
 			<div id="ltr">
 				<ul class="ltr">
-					<li><a href="#A" title="Alphabet Menu: A">A</a></li>
+					<li><a href="events.html" title="Alphabet Menu: …">…</a></li>
+					<li><a href="events1.html" title="Alphabet Menu: B">B</a></li>
+					<li><a href="events2.html" title="Alphabet Menu: D">D</a></li>
+					<li><a href="events3.html" title="Alphabet Menu: M">M</a></li>
+					<li><a href="events4.html" title="Alphabet Menu: N">N</a></li>
+					<li class = "CurrentSection"><a href="events5.html" title="Alphabet Menu: R">R</a></li>
 				</ul>
 			</div>
-			<table class="infolist primobjlist eventlist ltr">
+			<table class="infolist primobjlist alphaevent ltr">
 				<thead>
 					<tr>
-						<th class="ColumnLetter">Letter</th>
-						<th class="ColumnName">Name</th>
-						<th class="ColumnDescription">Description</th>
+						<th class="ColumnRowLabel">Letter</th>
+						<th class="ColumnType">Type</th>
+						<th class="ColumnDate">Date</th>
+						<th class="ColumnGRAMPSID">Gramps ID</th>
+						<th class="ColumnPerson">Person</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a id="A" name="event_A" title="Places beginning with letter A">A</a></td>
-						<td class="ColumnName">
-							<a href="heat/s/t/AllEvents.html" title="All Events">
-							All Events
-							</a>
+					<tr class = "BeginLetter BeginType">
+						<td class="ColumnLetter"><a name="R" title="Event types beginning with letter R">R</a></td>
+						<td class="ColumnType" title="Residence">Residence</td>
+						<td class="ColumnDate"></td>
+						<td class="ColumnGRAMPSID">
+							<a href="./evt/b/c/ff3cbbf4e2769bc2593f2b5a0cb.html" title="E0071">E0071</a>
 						</td>
-						<td class="ColumnDescription">Heatmap for All Events within the selected filter</td>
+						<td class="ColumnPerson">
+							<span class="person"><a href="ppl/0/d/ff3cbbf4e1d2573079e6399b2d0.html">de Jesus, Victoria Liwayway</a></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="ColumnLetter"></td>
+						<td class="ColumnType" title="&nbsp;">&nbsp;</td>
+						<td class="ColumnDate"></td>
+						<td class="ColumnGRAMPSID">
+							<a href="./evt/1/0/ff3cbbf4f5c242737c0ff673f01.html" title="E0082">E0082</a>
+						</td>
+						<td class="ColumnPerson">
+							<span class="person"><a href="ppl/b/b/ff3cbbf4f5c3f32b99e1f3d4cbb.html">de Jesus, Luningning</a></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="ColumnLetter"></td>
+						<td class="ColumnType" title="&nbsp;">&nbsp;</td>
+						<td class="ColumnDate"></td>
+						<td class="ColumnGRAMPSID">
+							<a href="./evt/7/8/ff3cbbf54951f7ebe571d68d787.html" title="E0121">E0121</a>
+						</td>
+						<td class="ColumnPerson">
+							<span class="person"><a href="ppl/8/a/ff3cbbf548b7856988cc40058a8.html">Zamora, Julito</a></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="ColumnLetter"></td>
+						<td class="ColumnType" title="&nbsp;">&nbsp;</td>
+						<td class="ColumnDate"></td>
+						<td class="ColumnGRAMPSID">
+							<a href="./evt/b/7/ff3cbbf55843e2e7fefaad2407b.html" title="E0130">E0130</a>
+						</td>
+						<td class="ColumnPerson">
+							<span class="person"><a href="ppl/1/7/ff3cbbf558437adeca71edb2271.html">Camara, Jose Salvador Gaela</a></span>
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -107,7 +149,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1 on 2026-06-23
+			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1<br />Last change was the 2025-07-31 11:49:38
 			</p>
 			<p id="copyright">
 			&copy; 2026 Laura Kathryn "Lauryn" Zamora Ong Loubert
